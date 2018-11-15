@@ -2,5 +2,8 @@
 (source gnu)
 
 (depends-on "pallet")
+
 (depends-on "magit")
+
 (depends-on "org")
+(depends-on "better-defaults")
