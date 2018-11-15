@@ -1,3 +1,6 @@
-(source melpa)
+(source melpa-stable)
+(source gnu)
 
 (depends-on "pallet")
+(depends-on "magit")
+(depends-on "org")
