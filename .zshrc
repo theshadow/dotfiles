@@ -1,0 +1,23 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+# Customize to your needs...
+function title {
+    echo -ne "\033]0;"$*"\007"
+}
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+export GOPATH=/Users/xguzman/Projects/go
+export PATH=$PATH:$GOPATH/bin
+export PROJECTS_PATH=/Users/xguzman/Projects/
+export CLICOLOR=1
+zstyle ':completion:*:default' list-colors ''
+eval "$(direnv hook zsh)"
