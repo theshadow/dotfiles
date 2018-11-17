@@ -4,20 +4,12 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+prompt skwp
+
 # Customize to your needs...
-function title {
-    echo -ne "\033]0;"$*"\007"
-}
-unalias run-help
-autoload run-help
-HELPDIR=/usr/local/share/zsh/help
-export GOPATH=$HOME/Projects/go
-export PATH=$PATH:$GOPATH/bin
-export PROJECTS_PATH=$HOME/Projects/
-export CLICOLOR=1
-zstyle ':completion:*:default' list-colors ''
-eval "$(direnv hook zsh)"
