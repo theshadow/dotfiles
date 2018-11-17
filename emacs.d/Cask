@@ -8,3 +8,4 @@
 (depends-on "org")
 (depends-on "better-defaults")
 (depends-on "multiple-cursors")
+(depends-on "smex")
