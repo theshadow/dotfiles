@@ -1,7 +1,7 @@
-;;; better-defaults --- Summary
+;;; 02-yasnippet.el --- Summary
 ;;; Commentary:
 ;;; Code:
 (require 'yasnippet)
 (yas-global-mode 1)
 (provide '02-yasnippet)
-;;; 02-better-defaults.el ends here
+;;; 02-yasnippet.el ends here
