@@ -10,6 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+## Custom
+
 prompt skwp
 
-# Customize to your needs...
+export GOPATH=$HOME/Projects/go
+export GOBIN=$GOPATH/bin
+export CASK_BIN=$HOME/.cask/bin
+export PATH=$PATH:$GOBIN:$CASK_BIN

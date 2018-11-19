@@ -1,12 +1,24 @@
 (source melpa-stable)
+(source org)
 (source gnu)
 
 (depends-on "pallet")
 
+(depends-on "yasnippet-go")
+(depends-on "go-eldoc")
+(depends-on "go-guru")
+(depends-on "go-dlv")
+(depends-on "go-mode")
+
+(depends-on "exec-path-from-shell")
+(depends-on "yasnippet")
+(depends-on "guru-mode")
+(depends-on "flycheck")
 (depends-on "magit")
 
-(depends-on "org")
+(depends-on "shut-up")
 (depends-on "better-defaults")
 (depends-on "multiple-cursors")
 (depends-on "smex")
-(depends-on "yasnippet")
+
+

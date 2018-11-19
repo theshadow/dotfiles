@@ -1,9 +1,12 @@
-OBJS = $HOME/.zshrc $HOME/.zpreztorc
+OBJS = $(HOME)/.zshrc $(HOME)/.zpreztorc
 
 all: install
 
 $(OBJS):
-	cp zshrc $@
-	cp zpreztorc $@
+	cp -f $(subst .,,$(@F)) $@
 
-install: $(ZSHRC_FILE)
+install: $(OBJS)
+
+uninstall:
+	rm -f $(HOME)/.zshrc
+	rm -f $(HOME)/.zpreztorc

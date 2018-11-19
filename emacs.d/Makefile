@@ -1,7 +1,8 @@
+l
 CASK_PATH = $(shell brew --cellar cask)/$(shell cask --version)
 CASK_BIN = /usr/bin/env cask
-
-SED_PATH = /usr/bin/env sed
+GIT_BIN = /usr/bin/env git
+SED_BIN = /usr/bin/env sed
 
 EMACS_D_PATH = $(HOME)/.emacs.d
 
@@ -16,15 +17,21 @@ $(EMACS_D_PATH)/customizations:
 $(EMACS_D_PATH)/.cask/%/elpa:
 	cd $(EMACS_D_PATH); $(CASK_BIN) install
 $(EMACS_D_PATH)/.cask: 
-	cd $(EMACS_D_PATH); $(CASK_BIN) install
+	cd $(EMACS_D_PATH); $(CASK_BIN) install --debug
 $(EMACS_D_PATH)/init.el:
-	/usr/bin/env sed -e "s=CP=$(CASK_PATH)=g" init.el.tpl > $@
+	$(SED_BIN) -e "s=CP=$(CASK_PATH)=g" init.el.tpl > $@
+git-repos:
+	mkdir -p $(EMACS_D_PATH)/customizations/git-mode
+	cd $(EMACS_D_PATH)/customizations/git-mode; $(GIT_BIN) clone https://github.com/ptrv/goflycheck.git
+
+	mkdir -p $(EMACS_D_PATH/customizations/yasnippet-go
+	cd $(EMACS_D_PATH/customizations/yasnippet-go; $(GIT_BIN) clone https://github.com/dominikh/yasnippet-go.git
 
 $(OBJS):
 	cp $(notdir $@) $@
 
 .PHONY: deps
-deps: $(EMACS_D_PATH)/.cask/%/elpa $(EMACS_D_PATH)/.cask
+deps: git-repos $(EMACS_D_PATH)/.cask/%/elpa $(EMACS_D_PATH)/.cask
 
 .PHONY: install
 install: $(EMACS_D_PATH) $(OBJS) $(EMACS_D_PATH)/init.el $(EMACS_D_PATH)/customizations deps
