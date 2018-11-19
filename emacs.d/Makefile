@@ -1,4 +1,3 @@
-l
 CASK_PATH = $(shell brew --cellar cask)/$(shell cask --version)
 CASK_BIN = /usr/bin/env cask
 GIT_BIN = /usr/bin/env git
