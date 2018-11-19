@@ -2,11 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 (require 'go-mode)
-;;(add-to-list 'yas-snippet-dirs (locate-library "yasnippet-go"))
-;;(add-hook 'go-mode-hook 'go-eldoc-setup)
+(add-hook 'go-mode-hook 'go-eldoc-setup)
 
-;;(add-to-list 'load-path "~/gocode/src/github.com/ptrv/goflycheck")
-;;(require 'go-flycheck)
+(add-to-list 'yas-snippet-dirs "~/.emacs.d/customizations/go-errorcheck")
 
 (provide '20-go-mode)
 ;;; 20-go-mode.el ends here

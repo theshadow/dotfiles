@@ -2,8 +2,9 @@
 (source org)
 (source gnu)
 
-(depends-on "pallet")
-
+(depends-on "flycheck-title")
+(depends-on "flycheck-pos-tip")
+(depends-on "flycheck-color-mode-line")
 (depends-on "go-eldoc")
 (depends-on "go-guru")
 (depends-on "go-dlv")
@@ -14,10 +15,13 @@
 (depends-on "guru-mode")
 (depends-on "flycheck")
 (depends-on "magit")
+(depends-on "auto-complete")
 
 (depends-on "shut-up")
 (depends-on "better-defaults")
 (depends-on "multiple-cursors")
 (depends-on "smex")
+
+(depends-on "pallet")
 
 
