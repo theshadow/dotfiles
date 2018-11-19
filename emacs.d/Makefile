@@ -14,7 +14,7 @@ $(EMACS_D_PATH)/customizations:
 $(EMACS_D_PATH)/.cask: 
 	cd $(EMACS_D_PATH); $(CASK_BIN) install
 $(EMACS_D_PATH)/init.el:
-	cp -f init.el.tpl $@
+	cp -f init.el $@
 git-repos:
 	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/dougm/goflymake.git
 	cd $(EMACS_D_PATH/customizations; $(GIT_BIN) clone https://github.com/dominikh/yasnippet-go.git
