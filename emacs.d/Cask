@@ -4,7 +4,6 @@
 
 (depends-on "pallet")
 
-(depends-on "yasnippet-go")
 (depends-on "go-eldoc")
 (depends-on "go-guru")
 (depends-on "go-dlv")

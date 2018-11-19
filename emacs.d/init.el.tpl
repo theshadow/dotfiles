@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'cask "CP/cask.el")
+(require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
 (require 'pallet)
