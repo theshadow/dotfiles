@@ -22,6 +22,10 @@
 (depends-on "multiple-cursors")
 (depends-on "smex")
 
+
+(depends-on "markdown-mode")
+(depends-on "pandoc-mode")
+
 (depends-on "pallet")
 
 

@@ -6,7 +6,7 @@ EMACS_D_PATH = $(HOME)/.emacs.d
 
 OBJS = $(EMACS_D_PATH)/Cask
 
-GO_DEPS = $(GOBIN)/errcheck $(GOBIN)/goflymake $(GOBIN)/unconvert 
+GO_DEPS = $(GOBIN)/errcheck $(GOBIN)/goflymake $(GOBIN)/unconvert
 
 all: install
 

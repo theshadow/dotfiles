@@ -18,3 +18,5 @@ export GOPATH=$HOME/Projects/go
 export GOBIN=$GOPATH/bin
 export CASK_BIN=$HOME/.cask/bin
 export PATH=$PATH:$GOBIN:$CASK_BIN
+
+export CLICOLOR=1
