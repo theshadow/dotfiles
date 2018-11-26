@@ -6,7 +6,7 @@ EMACS_D_PATH = $(HOME)/.emacs.d
 
 OBJS = $(EMACS_D_PATH)/Cask
 
-GO_DEPS = $(GOBIN)/errcheck $(GOBIN)/goflymake $(GOBIN)/unconvert
+GO_DEPS = $(GOBIN)/errcheck $(GOBIN)/goflymake $(GOBIN)/unconvert $(GOBIN)/goimports
 
 all: install
 
@@ -19,18 +19,17 @@ $(EMACS_D_PATH)/.cask:
 $(EMACS_D_PATH)/init.el:
 	cp -f init.el $@
 git-repos:
-	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/dougm/goflymake.git
 	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/dominikh/yasnippet-go.git
 	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/dominikh/go-errcheck.el.git
 
-$(GOBIN)/goflymake:
-	$(GO_BIN) get -u github.com/dougm/goflymake
 $(GOBIN)/errcheck:
 	$(GO_BIN) get -u github.com/kisielk/errcheck
 $(GOBIN)/unconvert:
 	$(GO_BIN) get -u github.com/mdempsky/unconvert
 $(GOBIN)/gocode:
 	$(GO_BIN) get -u github.com/nsf/gocode
+$(GOBIN)/goimports:
+	$(GO_BIN) get -u golang.org/x/tools/cmd/goimports
 
 go-deps: $(GO_DEPS)
 

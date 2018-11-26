@@ -1,14 +1,11 @@
 ;;; 02-flycheck.el --- Summary
 ;;; Commentary:
 ;;; Code:
-
-(add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
-(require 'go-flymake)
-(require 'go-flycheck)
+(require 'flycheck)
+(require 'flycheck-color-mode-line)
 
 (global-flycheck-mode)
 
-(require 'flycheck-color-mode-line)
 (eval-after-load "flycheck"
   '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
 

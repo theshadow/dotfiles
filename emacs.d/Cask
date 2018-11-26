@@ -2,9 +2,14 @@
 (source org)
 (source gnu)
 
-(depends-on "flycheck-title")
-(depends-on "flycheck-pos-tip")
-(depends-on "flycheck-color-mode-line")
+(depends-on "yaml-mode")
+(depends-on "json-mode")
+
+(depends-on "plantuml-mode")
+
+(depends-on "haskell-mode")
+
+(depends-on "go-autocomplete")
 (depends-on "go-eldoc")
 (depends-on "go-guru")
 (depends-on "go-dlv")
@@ -13,6 +18,10 @@
 (depends-on "exec-path-from-shell")
 (depends-on "yasnippet")
 (depends-on "guru-mode")
+(depends-on "flycheck-gometalinter")
+(depends-on "flycheck-title")
+(depends-on "flycheck-pos-tip")
+(depends-on "flycheck-color-mode-line")
 (depends-on "flycheck")
 (depends-on "magit")
 (depends-on "auto-complete")
@@ -22,9 +31,10 @@
 (depends-on "multiple-cursors")
 (depends-on "smex")
 
-
 (depends-on "markdown-mode")
 (depends-on "pandoc-mode")
+
+(depends-on "dracula-theme")
 
 (depends-on "pallet")
 
