@@ -17,6 +17,10 @@ prompt skwp
 export GOPATH=$HOME/Projects/go
 export GOBIN=$GOPATH/bin
 export CASK_BIN=$HOME/.cask/bin
-export PATH=$PATH:$GOBIN:$CASK_BIN
+export PYTHON_USER_BIN=$HOME/Library/Python/2.7/bin
+export HSANDBOX_BIN=$HOME/Projects/contrib/hsandbox
+export PATH=$PATH:$GOBIN:$CASK_BIN:$PYTHON_USER_BIN:$HSANDBOX_BIN
+
+export HSANDBOX_EDITOR=emacs
 
 export CLICOLOR=1

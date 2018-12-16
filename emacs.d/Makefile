@@ -30,6 +30,8 @@ $(GOBIN)/gocode:
 	$(GO_BIN) get -u github.com/nsf/gocode
 $(GOBIN)/goimports:
 	$(GO_BIN) get -u golang.org/x/tools/cmd/goimports
+$(GOBIN)/goflymake:
+	$(GO_BIN) get -u github.com/ptrv/goflycheck
 
 go-deps: $(GO_DEPS)
 
