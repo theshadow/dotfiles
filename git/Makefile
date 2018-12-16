@@ -4,6 +4,7 @@ all: install
 install:
 	cp gitmessage ~/.gitmessage
 	cp gitignore ~/.gitignore
+
 	git config --global user.name "Xander Guzman"
 	git config --global user.email "xander.guzman@xanderguzman.com"
 	git config --global core.editor emacs
