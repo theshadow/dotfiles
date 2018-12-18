@@ -21,6 +21,7 @@ $(EMACS_D_PATH)/init.el:
 git-repos:
 	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/dominikh/yasnippet-go.git
 	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/dominikh/go-errcheck.el.git
+	cd $(EMACS_D_PATH)/customizations; $(GIT_BIN) clone https://github.com/hniksic/emacs-htmlize.git
 
 $(GOBIN)/errcheck:
 	$(GO_BIN) get -u github.com/kisielk/errcheck
