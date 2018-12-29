@@ -16,5 +16,8 @@
    (latex . t)
    (R . t)
    ))
+
+(add-to-list 'load-path (concat user-emacs-directory "customizations/org-reveal/"))
+
 (provide '02-org-mode)
 ;;; 02-org-mode.el ends here
