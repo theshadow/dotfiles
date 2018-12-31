@@ -24,3 +24,5 @@ export PATH=$PATH:$GOBIN:$CASK_BIN:$PYTHON_USER_BIN:$HSANDBOX_BIN
 export HSANDBOX_EDITOR=emacs
 
 export CLICOLOR=1
+
+eval "$(rbenv init -)"
