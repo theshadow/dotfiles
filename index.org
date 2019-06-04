@@ -1,0 +1,9 @@
+* Stuff to do
+
+** TODO Add apilogs to the project
+
+=pip install apilogs=
+
+** TODO Add awslogs to the project
+
+=pip install awslogs=
