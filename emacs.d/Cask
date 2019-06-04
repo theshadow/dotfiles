@@ -37,4 +37,5 @@
 (depends-on "dracula-theme")
 
 (depends-on "pallet")
+(depends-on "ledger-mode")
 
