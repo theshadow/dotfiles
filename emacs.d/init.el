@@ -17,6 +17,12 @@
 
 (mapc 'load (directory-files "~/.emacs.d/customizations" t "^[0-9]+.*\.el$"))
 
+(tool-bar-mode -1)
+
+(setq inhibit-splash-screen t)
+(org-todo-list)
+(delete-other-windows)
+
 (provide 'init)
 
 ;;; init.el ends here

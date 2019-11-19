@@ -1,0 +1,3 @@
+[submodule "emacs.d/packages/pyel"]
+	path = emacs.d/packages/pyel
+	url = git@github.com:mschuldt/pyel.git
