@@ -29,5 +29,7 @@
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
+(setq org-agenda-prefix-format (add-to-list 'org-agenda-prefix-format '(agenda . " %i %-12:c%b%?-12t% s")))
+
 (provide '01-orgmode)
 ;;; 01-orgmode.el ends here

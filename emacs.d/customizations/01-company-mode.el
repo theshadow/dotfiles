@@ -4,4 +4,5 @@
 
 (straight-use-package 'company)
 
+(provide '01-company-mode)
 ;;; 01-company-mode.el ends here
